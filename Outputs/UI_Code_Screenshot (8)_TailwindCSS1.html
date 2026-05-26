@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 p-4">
+      <div class="flex items-center mb-6">
+        <div class="bg-gray-700 p-2 rounded-full">
+          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7" />
+          </svg>
+        </div>
+        <h1 class="ml-3 text-lg font-semibold">Dashboard</h1>
+      </div>
+      <div>
+        <h2 class="text-sm font-semibold mb-2">Top repositories</h2>
+        <input type="text" placeholder="Find a repository..."
+          class="w-full p-2 mb-4 bg-gray-700 rounded text-sm placeholder-gray-400">
+        <ul class="space-y-2">
+          <li class="text-sm">mahdin75/gis-mcp</li>
+          <li class="text-sm">Shahab-Esfandiar/Turing-Session01-HandsOn</li>
+          <li class="text-sm">Shahab-Esfandiar/Turing-Session03-Project</li>
+          <li class="text-sm">Shahab-Esfandiar/Turing-Session04-HandsOn</li>
+          <li class="text-sm">Shahab-Esfandiar/Turing-Session01-Project</li>
+        </ul>
+        <button class="mt-4 text-blue-400 text-sm">Show more</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-semibold">Home</h1>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Type to search"
+            class="p-2 bg-gray-700 rounded text-sm placeholder-gray-400">
+          <button class="bg-gray-700 p-2 rounded">
+            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 17h5l-1.405-1.405M19 13V7a2 2 0 00-2-2H7a2 2 0 00-2 2v6m0 0l-1.405 1.405M5 17h5" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="bg-gray-800 p-4 rounded mb-6">
+        <h2 class="text-lg font-semibold mb-2">Ask anything or type @ to add context</h2>
+        <div class="flex items-center space-x-2">
+          <button class="bg-gray-700 px-4 py-2 rounded text-sm">Ask</button>
+          <button class="bg-gray-700 px-4 py-2 rounded text-sm">All repositories</button>
+          <button class="bg-gray-700 px-4 py-2 rounded text-sm">+</button>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="text-lg font-semibold mb-4">Feed</h2>
+        <div class="bg-gray-800 p-4 rounded mb-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-sm font-semibold">keplerg/kepler.gl released</h3>
+              <p class="text-xs text-gray-400">2 weeks ago</p>
+            </div>
+            <button class="bg-gray-700 p-2 rounded">
+              <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <p class="text-sm mt-2">skill-v0.0.1</p>
+          <p class="text-xs text-gray-400 mt-1">Experimental: this release introduces a kepler.gl skill designed for
+            Claude Code, Codex etc. By leveraging the kepler.gl-jupyter Python package, this skill enables agents to
+            visualize geospatial re...</p>
+          <button class="text-blue-400 text-sm mt-2">Read more</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="w-64 bg-gray-800 p-4">
+      <h2 class="text-sm font-semibold mb-4">Latest from our changelog</h2>
+      <ul class="space-y-4">
+        <li>
+          <p class="text-xs text-gray-400">1 hour ago</p>
+          <p class="text-sm">Copilot Memory has more controls for deletion, scope...</p>
+        </li>
+        <li>
+          <p class="text-xs text-gray-400">1 hour ago</p>
+          <p class="text-sm">GitHub Code Quality: Repository Enablement API</p>
+        </li>
+        <li>
+          <p class="text-xs text-gray-400">2 hours ago</p>
+          <p class="text-sm">Target Copilot models to organizations with model rules</p>
+        </li>
+        <li>
+          <p class="text-xs text-gray-400">5 hours ago</p>
+          <p class="text-sm">Dependabot version updates now support the sbt ecosystem</p>
+        </li>
+      </ul>
+      <button class="text-blue-400 text-sm mt-4">View changelog</button>
+    </aside>
+  </div>
+</body>
+
+</html>

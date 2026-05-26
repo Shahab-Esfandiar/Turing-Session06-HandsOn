@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(13,17,23,1) 100%);
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Container -->
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#0d1117] p-4 flex flex-col">
+      <!-- Logo -->
+      <div class="flex items-center mb-6">
+        <div class="w-6 h-6 bg-gradient-to-r from-[#ff5722] to-[#ff9800] rounded-full"></div>
+        <span class="ml-2 text-lg font-semibold">Gemini</span>
+      </div>
+
+      <!-- Menu -->
+      <nav class="flex flex-col space-y-4">
+        <a href="#" class="flex items-center text-sm hover:text-gray-300">
+          <span class="material-icons-outlined text-lg">chat</span>
+          <span class="ml-2">New chat</span>
+        </a>
+        <a href="#" class="flex items-center text-sm hover:text-gray-300">
+          <span class="material-icons-outlined text-lg">search</span>
+          <span class="ml-2">Search chats</span>
+        </a>
+        <a href="#" class="flex items-center text-sm hover:text-gray-300">
+          <span class="material-icons-outlined text-lg">video_library</span>
+          <span class="ml-2">Videos</span>
+          <span class="ml-2 bg-red-500 text-xs text-white px-2 py-0.5 rounded">New</span>
+        </a>
+        <a href="#" class="flex items-center text-sm hover:text-gray-300">
+          <span class="material-icons-outlined text-lg">library_books</span>
+          <span class="ml-2">Library</span>
+        </a>
+      </nav>
+
+      <!-- Notebooks -->
+      <div class="mt-6">
+        <h3 class="text-sm font-semibold mb-2">Notebooks</h3>
+        <a href="#" class="text-sm hover:text-gray-300">New notebook</a>
+      </div>
+
+      <!-- Recent -->
+      <div class="mt-6">
+        <h3 class="text-sm font-semibold mb-2">Recent</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gray-300">پروژه هوش مصنوعی: مدل‌سازی و طرح وب</a></li>
+          <li><a href="#" class="hover:text-gray-300">انتشارگری پروژه: RAG</a></li>
+          <li><a href="#" class="hover:text-gray-300">مرور پروژه‌های هوش مصنوعی و ادامه کار</a></li>
+          <li><a href="#" class="hover:text-gray-300">پژوهش‌های کاربردی شبکه‌های شهری</a></li>
+          <li><a href="#" class="hover:text-gray-300">تحلیل مستمر پروژه شبکه‌های شهری</a></li>
+          <li><a href="#" class="hover:text-gray-300">اصلاح گراف پروژه و مقاله مرجع</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-auto">
+        <h3 class="text-sm font-semibold mb-2">Synthwave Music Generation</h3>
+        <a href="#" class="text-sm hover:text-gray-300">Activity</a>
+        <div class="mt-4 flex items-center">
+          <div class="w-8 h-8 bg-gray-600 rounded-full"></div>
+          <div class="ml-2">
+            <p class="text-sm font-semibold">Shahab Esfandiar</p>
+            <p class="text-xs text-gray-400">Pro</p>
+          </div>
+        </div>
+        <div class="mt-2 text-xs">
+          <p>Germany</p>
+          <p>From your IP address</p>
+          <a href="#" class="text-blue-400 hover:underline">Update location</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center">
+      <h1 class="text-2xl font-semibold mb-6">The mic is yours, Shahab</h1>
+      <div class="flex items-center bg-[#0d1117] rounded-full px-4 py-2 w-96">
+        <span class="material-icons-outlined text-lg">add</span>
+        <input type="text" placeholder="Ask Gemini" class="ml-4 flex-1 bg-transparent text-white outline-none">
+        <span class="text-sm text-gray-400">Pro</span>
+        <span class="material-icons-outlined text-lg ml-2">keyboard_voice</span>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

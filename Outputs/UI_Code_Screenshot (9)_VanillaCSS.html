@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #121212;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sidebar .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .sidebar .menu-item span {
+      font-size: 12px;
+      color: #00aaff;
+      background-color: #222;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .sidebar .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .sidebar .recent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .sidebar .profile {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .sidebar .profile .name {
+      font-weight: bold;
+    }
+
+    .sidebar .profile .location {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #001f3f, #000);
+    }
+
+    .main h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .main .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #222;
+      border-radius: 30px;
+      padding: 10px 20px;
+      width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .main .search-bar .icon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .main .search-bar input {
+      flex: 1;
+      border: none;
+      background: none;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .main .search-bar .dropdown {
+      font-size: 14px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .main .search-bar .mic {
+      font-size: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <span>🌟</span>
+      Gemini
+    </div>
+    <div class="menu">
+      <div class="menu-item">New chat</div>
+      <div class="menu-item">Search chats</div>
+      <div class="menu-item">
+        Videos <span>New</span>
+      </div>
+      <div class="menu-item">Library</div>
+    </div>
+    <div class="section-title">Notebooks</div>
+    <div class="menu-item">New notebook</div>
+    <div class="section-title">Recent</div>
+    <div class="recent">
+      <div>پروژه هوش مصنوعی: مدل‌سازی و طرح وب</div>
+      <div>انتشارگری پروژه: RAG</div>
+      <div>مرور پروژه‌های هوش مصنوعی و ادامه کار</div>
+      <div>پژوهش‌های کاربردی شبکه‌های داده‌های شهری</div>
+      <div>تحلیل مستمر پروژه‌های شبکه‌های شهری</div>
+      <div>اصلاح گراف پروژه و مقاله مرجع</div>
+      <div>Synthwave Music Generation</div>
+    </div>
+    <div class="section-title">Activity</div>
+    <div class="profile">
+      <div class="name">Shahab Esfandiar</div>
+      <div>Pro</div>
+      <div class="location">
+        Germany<br>
+        From your IP address<br>
+        Update location
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <h1>The mic is yours, Shahab</h1>
+    <div class="search-bar">
+      <div class="icon">+</div>
+      <input type="text" placeholder="Ask Gemini">
+      <div class="dropdown">Pro ▼</div>
+      <div class="mic">🎤</div>
+    </div>
+  </div>
+</body>
+</html>

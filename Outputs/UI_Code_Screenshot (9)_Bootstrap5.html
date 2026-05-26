@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #000000, #0a0a23);
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #1c1c1c;
+            height: 100%;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+        }
+
+        .sidebar h5 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            color: #00aaff;
+        }
+
+        .sidebar .new-badge {
+            background-color: #ff0000;
+            color: white;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+
+        .sidebar .user-info {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .sidebar .user-info .location {
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1c1c1c;
+            border-radius: 25px;
+            padding: 10px 20px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .search-bar input {
+            background: none;
+            border: none;
+            color: white;
+            outline: none;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+
+        .search-bar .dropdown {
+            margin-left: 10px;
+        }
+
+        .search-bar .mic-icon {
+            margin-left: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h5>Gemini</h5>
+        <a href="#">New chat</a>
+        <a href="#">Search chats</a>
+        <a href="#">Videos <span class="new-badge">New</span></a>
+        <a href="#">Library</a>
+
+        <h5 class="mt-4">Notebooks</h5>
+        <a href="#">New notebook</a>
+
+        <h5 class="mt-4">Recent</h5>
+        <a href="#">پروژه هوش مصنوعی: مدل‌سازی و طرح وب</a>
+        <a href="#">انتشارگری پروژه: RAG</a>
+        <a href="#">مرور پروژه‌های هوش مصنوعی و ادامه کار</a>
+        <a href="#">پروژه‌های فازبندی شبکه‌های داده‌ای شهری</a>
+        <a href="#">تحلیل مصرف انرژی شبکه‌های شهری</a>
+        <a href="#">اصلاح گراف پروژه و مقاله مرجع</a>
+        <a href="#">Synthwave Music Generation</a>
+
+        <h5 class="mt-4">Activity</h5>
+        <div class="user-info">
+            <strong>Shahab Esfandiar</strong> <span class="badge bg-secondary">Pro</span>
+            <div class="location">Germany<br>From your IP address<br><a href="#" class="text-decoration-underline">Update location</a></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>The mic is yours, Shahab</h1>
+        <div class="search-bar">
+            <span class="text-white">+</span>
+            <input type="text" placeholder="Ask Gemini">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pro
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+            </div>
+            <span class="mic-icon">🎤</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
