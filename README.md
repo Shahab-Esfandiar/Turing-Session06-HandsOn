@@ -1,5 +1,5 @@
 # 👁️ AI Vision: Screen-to-Code Generator
-This project is an advanced Vision-Language Model (VLM) engineering tool designed to demonstrate how multi-modal Large Language Models can bridge the gap between design and development. It acts as an automated "AI Frontend Engineer," analyzing uploaded UI screenshots or hand-drawn wireframes and dynamically generating pixel-perfect, production-ready HTML, CSS, and JavaScript.
+This project is an advanced Vision-Language Model (VLM) engineering tool designed to demonstrate how multi-modal Large Language Models can bridge the gap between design and development. It acts as an automated ***"AI Frontend Engineer"***, analyzing uploaded UI screenshots or hand-drawn wireframes and dynamically generating pixel-perfect, production-ready HTML, CSS, and JavaScript.
 
 <img width="1175" height="831" alt="image" src="https://github.com/user-attachments/assets/69f15919-cb86-47b8-96fe-55ebdfa214a2" />
 
